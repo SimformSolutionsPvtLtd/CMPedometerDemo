@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CMPedometerDemo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="2" id="Dk7-ec-xCq">
+                            <items>
+                                <label alignment="left" text="Time : N/A" id="pzO-Th-hhc">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="Steps  : N/A" id="RAH-xi-Qcl">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="Cadence : N/A" id="DaA-Hc-S7s">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="Pace : N/A" id="Rn7-wU-Rje">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="Avg Pace : N/A" id="hEb-1y-Bc1">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="Distance : N/A" id="v9m-7s-GDp">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="Floor Up : N/A" id="y89-IC-4yD">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="Floor Down : N/A" id="jRV-7I-ig7">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="10" right="10" top="0.0" bottom="0.0"/>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Start Updating Steps" id="fFA-mj-ge9">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="btnStartClicked" destination="AgC-eL-Hgc" id="l00-Tq-GUf"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnStartUpdating" destination="fFA-mj-ge9" id="Dof-dO-Dir"/>
+                        <outlet property="lblAvgPace" destination="hEb-1y-Bc1" id="UFs-9v-Nlu"/>
+                        <outlet property="lblCadence" destination="DaA-Hc-S7s" id="J63-Tb-UKd"/>
+                        <outlet property="lblDistance" destination="v9m-7s-GDp" id="x39-sY-55h"/>
+                        <outlet property="lblFloorsDown" destination="jRV-7I-ig7" id="7D8-y9-Mtt"/>
+                        <outlet property="lblFloorsUp" destination="y89-IC-4yD" id="FBd-QH-EHp"/>
+                        <outlet property="lblPace" destination="Rn7-wU-Rje" id="fkO-Is-lNX"/>
+                        <outlet property="lblSteps" destination="RAH-xi-Qcl" id="0Jf-r1-tYR"/>
+                        <outlet property="lblTime" destination="pzO-Th-hhc" id="dOW-DR-6fN"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

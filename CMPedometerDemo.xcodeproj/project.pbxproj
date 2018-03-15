@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8693FDF2059734700D953C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8693FDE2059734700D953C1 /* AppDelegate.swift */; };
+		B8693FE12059734700D953C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8693FE02059734700D953C1 /* ViewController.swift */; };
+		B8693FE42059734700D953C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8693FE22059734700D953C1 /* Main.storyboard */; };
+		B8693FE62059734700D953C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8693FE52059734700D953C1 /* Assets.xcassets */; };
+		B8693FE92059734700D953C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8693FE72059734700D953C1 /* LaunchScreen.storyboard */; };
+		B8693FEE2059734700D953C1 /* CMPedometerDemo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B8693FED2059734700D953C1 /* CMPedometerDemo WatchKit App.app */; };
+		B8693FF42059734700D953C1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8693FF22059734700D953C1 /* Interface.storyboard */; };
+		B8693FF62059734700D953C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8693FF52059734700D953C1 /* Assets.xcassets */; };
+		B8693FFD2059734700D953C1 /* CMPedometerDemo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8693FFC2059734700D953C1 /* CMPedometerDemo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B86940022059734700D953C1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86940012059734700D953C1 /* InterfaceController.swift */; };
+		B86940042059734700D953C1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86940032059734700D953C1 /* ExtensionDelegate.swift */; };
+		B86940062059734700D953C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86940052059734700D953C1 /* Assets.xcassets */; };
+		B86940162059738900D953C1 /* ActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86940152059738900D953C1 /* ActivityHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8693FEF2059734700D953C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8693FD32059734700D953C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8693FEC2059734700D953C1;
+			remoteInfo = "CMPedometerDemo WatchKit App";
+		};
+		B8693FFE2059734700D953C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8693FD32059734700D953C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8693FFB2059734700D953C1;
+			remoteInfo = "CMPedometerDemo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B869400D2059734700D953C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B8693FFD2059734700D953C1 /* CMPedometerDemo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B86940112059734700D953C1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B8693FEE2059734700D953C1 /* CMPedometerDemo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B8693FDB2059734700D953C1 /* CMPedometerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMPedometerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8693FDE2059734700D953C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8693FE02059734700D953C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8693FE32059734700D953C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8693FE52059734700D953C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8693FE82059734700D953C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8693FEA2059734700D953C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8693FED2059734700D953C1 /* CMPedometerDemo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CMPedometerDemo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8693FF32059734700D953C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B8693FF52059734700D953C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8693FF72059734700D953C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8693FFC2059734700D953C1 /* CMPedometerDemo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CMPedometerDemo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86940012059734700D953C1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B86940032059734700D953C1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B86940052059734700D953C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B86940072059734700D953C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B86940152059738900D953C1 /* ActivityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8693FD82059734700D953C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8693FF92059734700D953C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8693FD22059734700D953C1 = {
+			isa = PBXGroup;
+			children = (
+				B8693FDD2059734700D953C1 /* CMPedometerDemo */,
+				B8693FF12059734700D953C1 /* CMPedometerDemo WatchKit App */,
+				B86940002059734700D953C1 /* CMPedometerDemo WatchKit Extension */,
+				B8693FDC2059734700D953C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8693FDC2059734700D953C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8693FDB2059734700D953C1 /* CMPedometerDemo.app */,
+				B8693FED2059734700D953C1 /* CMPedometerDemo WatchKit App.app */,
+				B8693FFC2059734700D953C1 /* CMPedometerDemo WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8693FDD2059734700D953C1 /* CMPedometerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B8693FDE2059734700D953C1 /* AppDelegate.swift */,
+				B8693FE02059734700D953C1 /* ViewController.swift */,
+				B8693FE22059734700D953C1 /* Main.storyboard */,
+				B8693FE52059734700D953C1 /* Assets.xcassets */,
+				B8693FE72059734700D953C1 /* LaunchScreen.storyboard */,
+				B8693FEA2059734700D953C1 /* Info.plist */,
+			);
+			path = CMPedometerDemo;
+			sourceTree = "<group>";
+		};
+		B8693FF12059734700D953C1 /* CMPedometerDemo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B8693FF22059734700D953C1 /* Interface.storyboard */,
+				B8693FF52059734700D953C1 /* Assets.xcassets */,
+				B8693FF72059734700D953C1 /* Info.plist */,
+			);
+			path = "CMPedometerDemo WatchKit App";
+			sourceTree = "<group>";
+		};
+		B86940002059734700D953C1 /* CMPedometerDemo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B86940152059738900D953C1 /* ActivityHelper.swift */,
+				B86940012059734700D953C1 /* InterfaceController.swift */,
+				B86940032059734700D953C1 /* ExtensionDelegate.swift */,
+				B86940052059734700D953C1 /* Assets.xcassets */,
+				B86940072059734700D953C1 /* Info.plist */,
+			);
+			path = "CMPedometerDemo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8693FDA2059734700D953C1 /* CMPedometerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B86940122059734700D953C1 /* Build configuration list for PBXNativeTarget "CMPedometerDemo" */;
+			buildPhases = (
+				B8693FD72059734700D953C1 /* Sources */,
+				B8693FD82059734700D953C1 /* Frameworks */,
+				B8693FD92059734700D953C1 /* Resources */,
+				B86940112059734700D953C1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8693FF02059734700D953C1 /* PBXTargetDependency */,
+			);
+			name = CMPedometerDemo;
+			productName = CMPedometerDemo;
+			productReference = B8693FDB2059734700D953C1 /* CMPedometerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8693FEC2059734700D953C1 /* CMPedometerDemo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B869400E2059734700D953C1 /* Build configuration list for PBXNativeTarget "CMPedometerDemo WatchKit App" */;
+			buildPhases = (
+				B8693FEB2059734700D953C1 /* Resources */,
+				B869400D2059734700D953C1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8693FFF2059734700D953C1 /* PBXTargetDependency */,
+			);
+			name = "CMPedometerDemo WatchKit App";
+			productName = "CMPedometerDemo WatchKit App";
+			productReference = B8693FED2059734700D953C1 /* CMPedometerDemo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B8693FFB2059734700D953C1 /* CMPedometerDemo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B869400A2059734700D953C1 /* Build configuration list for PBXNativeTarget "CMPedometerDemo WatchKit Extension" */;
+			buildPhases = (
+				B8693FF82059734700D953C1 /* Sources */,
+				B8693FF92059734700D953C1 /* Frameworks */,
+				B8693FFA2059734700D953C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CMPedometerDemo WatchKit Extension";
+			productName = "CMPedometerDemo WatchKit Extension";
+			productReference = B8693FFC2059734700D953C1 /* CMPedometerDemo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8693FD32059734700D953C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Simform Solutions PVT. LTD.";
+				TargetAttributes = {
+					B8693FDA2059734700D953C1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B8693FEC2059734700D953C1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B8693FFB2059734700D953C1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B8693FD62059734700D953C1 /* Build configuration list for PBXProject "CMPedometerDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8693FD22059734700D953C1;
+			productRefGroup = B8693FDC2059734700D953C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8693FDA2059734700D953C1 /* CMPedometerDemo */,
+				B8693FEC2059734700D953C1 /* CMPedometerDemo WatchKit App */,
+				B8693FFB2059734700D953C1 /* CMPedometerDemo WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8693FD92059734700D953C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8693FE92059734700D953C1 /* LaunchScreen.storyboard in Resources */,
+				B8693FE62059734700D953C1 /* Assets.xcassets in Resources */,
+				B8693FE42059734700D953C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8693FEB2059734700D953C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8693FF62059734700D953C1 /* Assets.xcassets in Resources */,
+				B8693FF42059734700D953C1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8693FFA2059734700D953C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86940062059734700D953C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8693FD72059734700D953C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8693FE12059734700D953C1 /* ViewController.swift in Sources */,
+				B8693FDF2059734700D953C1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8693FF82059734700D953C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86940042059734700D953C1 /* ExtensionDelegate.swift in Sources */,
+				B86940022059734700D953C1 /* InterfaceController.swift in Sources */,
+				B86940162059738900D953C1 /* ActivityHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8693FF02059734700D953C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8693FEC2059734700D953C1 /* CMPedometerDemo WatchKit App */;
+			targetProxy = B8693FEF2059734700D953C1 /* PBXContainerItemProxy */;
+		};
+		B8693FFF2059734700D953C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8693FFB2059734700D953C1 /* CMPedometerDemo WatchKit Extension */;
+			targetProxy = B8693FFE2059734700D953C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8693FE22059734700D953C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8693FE32059734700D953C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8693FE72059734700D953C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8693FE82059734700D953C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B8693FF22059734700D953C1 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8693FF32059734700D953C1 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B86940082059734700D953C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B86940092059734700D953C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B869400B2059734700D953C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				INFOPLIST_FILE = "CMPedometerDemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.CMPedometerDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		B869400C2059734700D953C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				INFOPLIST_FILE = "CMPedometerDemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.CMPedometerDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		B869400F2059734700D953C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				IBSC_MODULE = CMPedometerDemo_WatchKit_Extension;
+				INFOPLIST_FILE = "CMPedometerDemo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.CMPedometerDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		B86940102059734700D953C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				IBSC_MODULE = CMPedometerDemo_WatchKit_Extension;
+				INFOPLIST_FILE = "CMPedometerDemo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.CMPedometerDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		B86940132059734700D953C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				INFOPLIST_FILE = CMPedometerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.CMPedometerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B86940142059734700D953C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
+				INFOPLIST_FILE = CMPedometerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.CMPedometerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8693FD62059734700D953C1 /* Build configuration list for PBXProject "CMPedometerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B86940082059734700D953C1 /* Debug */,
+				B86940092059734700D953C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B869400A2059734700D953C1 /* Build configuration list for PBXNativeTarget "CMPedometerDemo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B869400B2059734700D953C1 /* Debug */,
+				B869400C2059734700D953C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B869400E2059734700D953C1 /* Build configuration list for PBXNativeTarget "CMPedometerDemo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B869400F2059734700D953C1 /* Debug */,
+				B86940102059734700D953C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B86940122059734700D953C1 /* Build configuration list for PBXNativeTarget "CMPedometerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B86940132059734700D953C1 /* Debug */,
+				B86940142059734700D953C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8693FD32059734700D953C1 /* Project object */;
+}
